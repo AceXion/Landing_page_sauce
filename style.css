@@ -39,6 +39,11 @@ section#Contact{
     background: rgb(38, 51, 49) no-repeat center center/cover;
 }
 
+.hamburger .material-symbols-outlined{
+  display: none;
+  margin: 2rem 2rem;
+}
+
 
 .head{
     display: flex;
@@ -62,6 +67,9 @@ section#Contact{
     align-items: center;
     margin-right: 3rem;
 }
+.head .hamburger{
+  display: none;
+}
 
 .head .links li{
     padding: 0px 0.3rem;
@@ -75,14 +83,14 @@ section#Contact{
 
 @media(max-width: 600px){
     .head .title {
-        font-size: 12px;
-        padding: 2rem 1rem;
+        font-size: 17px;
+        padding: 2rem 2rem;
     }
     .head .links li a {
         font-size: 10px;
     }
     .head .links {
-        margin-right: 1px;
+        margin-right: 2px;
     }
 }
 
@@ -339,7 +347,7 @@ section p {
     border-radius: 8px;
     background: white;
   }
-  
+
   .screen-header-button.close {
     background: #ed1c6f;
   }
@@ -507,3 +515,38 @@ section p {
     }
   }
   
+
+@media (max-width: 734px){
+
+
+  .head .links{
+    display: none;  
+    align-items: center;
+    margin-top: 10rem;
+    padding: 0px 5rem 100vh;
+
+  }
+  .head .hamburger{
+    display: block;
+  }
+
+  .head .links li a{
+    font-size: large;
+    
+  }
+  .head .links li{
+    padding: 2rem 0px;
+  }
+
+  .hamburger .material-symbols-outlined{
+    display: block;
+  }
+  
+}
+@media (min-width:734px){
+  .head .links{
+    display: flex;
+  }
+
+}
+
